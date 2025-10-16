@@ -325,3 +325,76 @@ form .text-info {
     width: 80%;
   }
 }
+/* ===== PARCHE RÁPIDO MODO OSCURO/CLARO (pegar al final) ===== */
+
+html { color-scheme: light dark; }
+body, #root {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+/* Links */
+a, a:visited {
+  color: var(--text);
+}
+a:hover { opacity: .85; }
+
+/* Botones genéricos */
+button, .btn, [role="button"] {
+  background: var(--card) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* Inputs / selects / textareas */
+input, select, textarea {
+  background: var(--card) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+}
+input::placeholder, textarea::placeholder {
+  color: var(--muted, #9ca3af);
+}
+
+/* Tarjetas y contenedores comunes */
+.card, .panel, .box, .container, .content, .section {
+  background: var(--card) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* Barras superiores / headers / sidebars (ajusta si tus clases difieren) */
+.header, .topbar, .navbar, .sidebar, .sidenav, .footer {
+  background: var(--card) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+/* Modales / popups */
+.modal, .popup, .dialog, .cont-popup .popup {
+  background: var(--card) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+}
+.cont-popup {
+  background: rgba(0,0,0,.35); /* semitransparente, no negro sólido */
+  backdrop-filter: blur(2px);
+}
+
+/* Mensajes / chips / burbujas (ajusta si tenés clases propias) */
+.badge, .chip, .pill, .message, .bubble {
+  background: var(--card) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+/* Iconos (Font Awesome / SVG) heredan color del texto */
+i, svg { color: var(--text); fill: currentColor; }
+
+/* Separadores */
+hr, .divider { border-color: var(--border) !important; }
+
+/* Si algún bloque se pinta blanco por “inherit”, deja fondo transparente */
+.transparent, .no-bg { background: transparent !important; }
+
+/* ============================================================ */
