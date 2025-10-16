@@ -1,3 +1,34 @@
+/* ⬇️ al INICIO de src/index.css */
+:root{
+  --bg:#ffffff;
+  --text:#0f1115;
+  --card:#ffffff;
+  --border:#e5e7eb;
+  --fw: 400; /* normal */
+}
+.dark{
+  --bg:#0b0c0f;
+  --text:#f3f4f6;
+  --card:#0f1115;
+  --border:#283241;
+}
+.bold{ --fw: 700; } /* negrita global */
+
+html, body, #root { height: 100%; }
+body{
+  margin:0;
+  background: var(--bg);
+  color: var(--text);
+  font-weight: var(--fw);
+  transition: background .2s, color .2s, font-weight .15s;
+}
+
+/* utilidades */
+.card{ background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px; }
+.btn{ border:1px solid var(--border); background:var(--card); color:var(--text); padding:8px 12px; border-radius:10px; cursor:pointer; }
+.btn:hover{ opacity:.95; }
+.row{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+
 * {
   margin: 0;
   padding: 0;

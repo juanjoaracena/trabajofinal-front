@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useChat } from "../context/ChatContext"
 import { Link, useNavigate } from "react-router-dom"
+import ThemeAndBoldButtons from './ThemeAndBoldButtons'
 
 export default function Chat() {
   const [msg, setMsg] = useState("")
@@ -69,10 +70,17 @@ export default function Chat() {
           <div className="popup">
             <h2>Configuración de Chat</h2>
             <h3>Cambiar tema:</h3>
-            <select name="" id="">
+            <div className="card" style={{ display:'flex', justifyContent:'space-between', alignItems:'center', gap:12 }}>
+  <div>
+    <div style={{ fontWeight:600 }}>Apariencia</div>
+    <div style={{ color:'var(--muted)', fontSize:14 }}>Tema y negrita</div>
+  </div>
+  <ThemeAndBoldButtons />
+</div>
+            {/*<select name="" id="">
               <option value="">Claro</option>
               <option value="">Oscuro</option>
-            </select><br></br>
+            </select><br></br>*/}
             <button onClick={handleClosePopup}>Cerrar</button>
           </div>
         </section>
