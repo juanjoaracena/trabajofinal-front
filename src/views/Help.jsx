@@ -1,9 +1,6 @@
-import { Link } from "react-router-dom"
-
-const Help = () => {
+export default function Help() {
   return (
-    <main>
-        <div style={{ maxWidth: 900, margin: "0 auto", padding: 24 }}>
+    <div style={{ maxWidth: 900, margin: "0 auto", padding: 24 }}>
       <h1 style={{ marginBottom: 8 }}>Ayuda</h1>
       <p style={{ color: "var(--muted)" }}>
         Esta página reúne información general sobre el proyecto: cómo empezar, funciones básicas, configuración y resolución de problemas.
@@ -131,10 +128,5 @@ const Help = () => {
         </p>
       </section>
     </div>
-  
-
-
-    </main>
-  )
+  );
 }
-
