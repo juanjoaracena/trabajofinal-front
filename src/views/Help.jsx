@@ -122,11 +122,21 @@ export default function Help() {
         <p>
           ¿Necesitás ayuda adicional o querés reportar un problema? Escribinos a
           {" "}
-          <a href="mailto:soporte@tuproyecto.com">soporte@tuproyecto.com</a>
+          <a href="mailto:juanjoaracena@gmail.com">juanjoaracena@gmail.com</a>
           {" "}
-          o abrí un issue en el repositorio.
-        </p>
+           </p>
       </section>
     </div>
   );
 }
+<button
+  className="btn"
+  onClick={() => {
+    localStorage.removeItem("theme");
+    localStorage.removeItem("bold");
+    document.documentElement.classList.remove("dark", "bold");
+    alert("Preferencias restablecidas. Volvé a elegir desde Configuración.");
+  }}
+>
+  Restablecer preferencias
+</button>
