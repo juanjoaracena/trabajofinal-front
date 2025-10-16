@@ -125,11 +125,7 @@ export default function Help() {
           <a href="mailto:juanjoaracena@gmail.com">juanjoaracena@gmail.com</a>
           {" "}
            </p>
-      </section>
-    </div>
-  );
-}
-<button
+           <button
   className="btn"
   onClick={() => {
     localStorage.removeItem("theme");
@@ -140,3 +136,8 @@ export default function Help() {
 >
   Restablecer preferencias
 </button>
+      </section>
+    </div>
+  );
+}
+
