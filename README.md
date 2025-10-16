@@ -5,7 +5,8 @@
 
 Aplicación web construida con **React + Vite** que simula una interfaz de chat con **configuración de apariencia** (tema **claro/oscuro** y **texto normal/negrita**), página de **Ayuda** y almacenamiento de preferencias en el **navegador**.
 
-![screenshot-placeholder](./docs/logo-juan-jose-aracena-dark.png
+![Juan José Aracena](docs/logo-juan-jose-aracena-dark.png)
+
 
 ---
 
